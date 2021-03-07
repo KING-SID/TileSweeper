@@ -29,7 +29,7 @@ object TileSweeperModel {
     }
 
     var currentLevel = 1
-    var boardSize = 3
+    var boardSize = 5
     var flaggedTiles = mutableListOf<Pair<Int, Int>>()
     var exploredTiles = mutableListOf<Pair<Int, Int>>()
     var mineCoordinates = mutableListOf<Pair<Int, Int>>()
@@ -101,11 +101,11 @@ object TileSweeperModel {
         currentLevel = 1
         if (difficulty == Difficulty.HARD)
         {
-            boardSize=4
+            boardSize= 6
         }else
         {
 
-            boardSize = 3
+            boardSize = 5
         }
         mineCoordinates = mutableListOf<Pair<Int, Int>>()
         exploredTiles = mutableListOf<Pair<Int, Int>>()
