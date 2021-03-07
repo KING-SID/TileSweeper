@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:expandable="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E5C45B"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:id="@+id/menuView"
+    android:weightSum="3"
+    tools:context=".MenuActivity">
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_marginTop="20dp"
+        android:padding="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:src="@drawable/tilesweeper_logo" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="50dp"
+        android:weightSum="3"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/easyBtn"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/easy_string"
+            android:textColor="@color/black"
+            android:layout_margin="10dp"
+            android:backgroundTint="@color/tileSweeperOrange"
+            />
+        <Button
+            android:id="@+id/mediumBtn"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/medium_string"
+            android:textColor="@color/black"
+            android:layout_margin="10dp"
+            android:backgroundTint="@color/tileSweeperOrange"
+            />
+        <Button
+            android:id="@+id/hardBtn"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/hard_string"
+            android:textColor="@color/black"
+            android:layout_margin="10dp"
+            android:backgroundTint="@color/tileSweeperOrange"
+            />
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/testTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="dummy"
+        android:visibility="gone"
+
+        />
+
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/aboutBtn"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:tint="@color/white"
+        android:background="@color/white"
+        android:layout_gravity="end|bottom"
+        android:src="@drawable/ic_info"
+        android:layout_margin="16dp"
+        android:backgroundTint="@color/tileSweeperOrange"
+        />
+
+
+</LinearLayout>
